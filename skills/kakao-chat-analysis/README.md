@@ -12,6 +12,12 @@
 
 키워드 빈도나 방법론 설명은 넣지 않습니다. "무슨 얘기가 오갔고 무엇이 남았는가"만 다룹니다.
 
+**결과 샘플** (가상의 등산 동호회 대화 39건으로 생성): [웹페이지로 보기](https://kyungminiyang.github.io/claude-skills/samples/kakao-chat-analysis/report.html) · [PDF](../../docs/samples/kakao-chat-analysis/report.pdf) · [HTML 원본](../../docs/samples/kakao-chat-analysis/report.html)
+
+![보고서 미리보기](../../docs/samples/kakao-chat-analysis/preview.png)
+
+웹페이지 링크는 저장소의 GitHub Pages(Settings → Pages → `main` / `/docs`)를 켠 뒤에 동작합니다.
+
 ---
 
 ## 어떤 AI에서 쓸 수 있나

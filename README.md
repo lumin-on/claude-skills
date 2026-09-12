@@ -8,6 +8,18 @@ Claude Code용 스킬 모음입니다. 스킬 하나가 폴더 하나이고, 각
 |---|---|---|
 | **kakao-chat-analysis** | 카카오톡 대화 내보내기(.txt)를 처음부터 끝까지 읽고 "누가, 무슨 논의를, 어떻게 진행했고, 어떻게 끝났는지"를 HTML + PDF 보고서로 정리 | [skills/kakao-chat-analysis/README.md](skills/kakao-chat-analysis/README.md) |
 
+## 결과 미리보기
+
+kakao-chat-analysis가 만든 보고서입니다. 가상의 등산 동호회 대화 39건(합성 데이터)으로 만들었습니다.
+
+![kakao-chat-analysis 보고서 미리보기](docs/samples/kakao-chat-analysis/preview.png)
+
+- 웹페이지로 보기: https://kyungminiyang.github.io/claude-skills/samples/kakao-chat-analysis/report.html
+- PDF로 보기: [report.pdf](docs/samples/kakao-chat-analysis/report.pdf)
+- HTML 원본: [report.html](docs/samples/kakao-chat-analysis/report.html)
+
+GitHub는 저장소 안의 HTML 파일을 클릭하면 소스 코드로만 보여줍니다. 위의 "웹페이지로 보기" 링크가 동작하려면 저장소 **Settings → Pages → Build and deployment → Source: Deploy from a branch → `main` / `/docs`** 로 한 번 설정해야 합니다. 몇 분 뒤부터 `docs/` 안의 HTML이 웹페이지로 열립니다. PDF 링크는 설정 없이 GitHub 뷰어에서 바로 열립니다.
+
 ## 어떤 AI에서 쓸 수 있나
 
 이 저장소의 스킬은 Anthropic의 **Agent Skills** 형식(`SKILL.md` + 부속 파일)으로 쓰여 있습니다.

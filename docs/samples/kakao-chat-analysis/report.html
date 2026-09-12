@@ -1,0 +1,135 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>산들바람 등산회 8월 산행 준비</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap">
+<style>
+:root{color-scheme:light;--bg:#f4f5f8;--surface:#fff;--surface2:#eef0f5;--ink:#15181f;--ink2:#4d5563;--muted:#7d8594;--line:#e2e5ec;--line2:#cdd2dc;--accent:#3d4f8f;--accent-ink:#fff;--accent-soft:#e6e9f6;--s1:#2a78d6;--s2:#eb6834;--s3:#1baf7a;--s4:#eda100;--good:#0ca30c;--warn:#fab219;--crit:#d03b3b;
+--fb:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;--fd:"Gowun Dodum","IBM Plex Sans KR","Malgun Gothic",sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#111318;--surface:#181b22;--surface2:#20242d;--ink:#f2f3f6;--ink2:#c2c7d1;--muted:#8b92a0;--line:#2a2f3a;--line2:#3a404d;--accent:#8fa0e6;--accent-ink:#0f1220;--accent-soft:#252b45;--s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#111318;--surface:#181b22;--surface2:#20242d;--ink:#f2f3f6;--ink2:#c2c7d1;--muted:#8b92a0;--line:#2a2f3a;--line2:#3a404d;--accent:#8fa0e6;--accent-ink:#0f1220;--accent-soft:#252b45;--s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#c98500;}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--fb);font-size:15.5px;line-height:1.65}
+a{color:var(--accent)}.wrap{display:grid;grid-template-columns:210px minmax(0,1fr);gap:36px;max-width:1240px;margin:0 auto;padding:32px 28px 80px}
+@media (max-width:900px){.wrap{grid-template-columns:1fr;gap:12px;padding:20px 16px}nav{position:static!important}}
+nav{position:sticky;top:24px;align-self:start;font-size:13.5px;border-right:1px solid var(--line);padding-right:14px}
+nav .eyebrow{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+nav a{display:block;color:var(--ink2);text-decoration:none;padding:5px 0 5px 10px;border-left:2px solid transparent;margin-left:-11px}nav a:hover{color:var(--ink);border-left-color:var(--accent)}nav a.sub{font-size:12.5px;padding-left:22px;color:var(--muted)}
+h1{font-family:var(--fd);font-weight:400;font-size:36px;line-height:1.2;margin:0 0 6px;text-wrap:balance}.sub{color:var(--ink2);margin:0 0 4px}.src{font-size:12.5px;color:var(--muted)}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin:22px 0 6px}.tile{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 16px}.tile .tl{font-size:12px;color:var(--muted)}.tile .tv{font-size:28px;font-weight:600;line-height:1.15}.tile .td{font-size:12.5px;color:var(--ink2)}
+section{margin-top:52px}section>h2{font-family:var(--fd);font-weight:400;font-size:26px;margin:0 0 4px;display:flex;align-items:baseline;gap:12px}section>h2 .no{font-size:13px;color:var(--muted)}.lead{color:var(--ink2);margin:0 0 18px;max-width:70ch}
+h3{font-size:18px;font-weight:600;margin:30px 0 10px}h4{font-size:16px;font-weight:600;margin:0}p{max-width:74ch}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px 20px;margin:12px 0}.card h3{margin-top:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
+.sp .role{font-size:13px;font-weight:500;color:var(--muted);margin-left:6px}.sp .spstat{font-size:12.5px;color:var(--muted);margin:-4px 0 8px}.sp p{margin:6px 0}
+.summary{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:0 10px 10px 0;padding:14px 22px;margin:14px 0}.summary li{margin:6px 0;max-width:80ch}
+.chart{width:100%;height:auto;display:block}.chart .grid{stroke:var(--line)}.chart .tick{font-size:11.5px;fill:var(--muted)}.chart .lab{font-size:12px;fill:var(--ink2);font-weight:600}.chart [data-tip]:hover{opacity:.8}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--ink2);margin:4px 0 10px}.legend i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.tablewrap{overflow-x:auto;margin:10px 0}table.data{border-collapse:collapse;width:100%;font-size:14px;background:var(--surface);border:1px solid var(--line)}table.data th,table.data td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}table.data thead th{font-size:12px;color:var(--muted);font-weight:500;background:var(--surface2)}table.data tbody th{font-weight:600;white-space:nowrap}td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap;color:var(--muted)}td.dnum{white-space:nowrap;font-weight:600}.wk{font-weight:400;color:var(--muted);font-size:12px;margin-left:4px}
+.sw{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:7px;vertical-align:-1px}.muted{color:var(--muted);font-weight:400;font-size:14px}
+.group{margin-top:26px}.gdesc{color:var(--ink2);margin:0 0 8px}
+.topic{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin:10px 0}.topic header{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.topic .tmeta{font-size:13px;color:var(--muted);margin:4px 0 8px}.topic p{margin:6px 0}.topic .tend,.topic .tnext{font-size:14px;color:var(--ink2)}
+.status{font-size:12px;padding:3px 9px;border-radius:99px;font-weight:500;white-space:nowrap}.st-done{background:color-mix(in srgb,var(--good) 16%,transparent)}.st-open{background:color-mix(in srgb,var(--warn) 22%,transparent)}.st-drop{background:color-mix(in srgb,var(--crit) 14%,transparent)}.st-info{background:var(--surface2);color:var(--ink2)}.st-assigned{background:var(--accent-soft)}
+.statusline{display:flex;gap:8px;flex-wrap:wrap;align-items:center;font-size:13.5px;margin:8px 0}
+footer{margin-top:56px;font-size:12.5px;color:var(--muted);border-top:1px solid var(--line);padding-top:12px}footer ul{margin:6px 0;padding-left:18px}
+#tip{position:fixed;pointer-events:none;background:var(--ink);color:var(--bg);font-size:12.5px;padding:6px 9px;border-radius:6px;opacity:0;z-index:9;max-width:320px}
+@media print{
+ @page{size:A4;margin:14mm 13mm}
+ :root{color-scheme:light;--bg:#f4f5f8;--surface:#fff;--surface2:#eef0f5;--ink:#15181f;--ink2:#4d5563;--muted:#7d8594;--line:#e2e5ec;--line2:#cdd2dc;--accent:#3d4f8f;--accent-ink:#fff;--accent-soft:#e6e9f6;--s1:#2a78d6;--s2:#eb6834;--s3:#1baf7a;--s4:#eda100;}
+ *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+ html{background:var(--bg)}
+ body{font-size:11pt;line-height:1.5;background:var(--bg)}
+ .wrap{display:block;max-width:none;padding:0;margin:0}nav,#tip{display:none!important}
+ h1{font-size:24pt}section{margin-top:22pt}section>h2{font-size:17pt}h3{font-size:13pt;margin:16pt 0 6pt}h4{font-size:11.5pt}
+ .tiles{grid-template-columns:repeat(4,1fr);gap:8px;margin:12pt 0 4pt}.tile .tv{font-size:18pt}.tile{padding:8px 12px}
+ .grid{grid-template-columns:1fr 1fr;gap:10px}
+ .card,.topic,.tile,.summary,tr{break-inside:avoid}.group{break-inside:auto}section>h2,h3{break-after:avoid}
+ .topic{padding:10px 14px;margin:8px 0}.topic p{margin:4px 0;font-size:10.5pt}.topic .tmeta{font-size:9.5pt}
+ table.data{font-size:9.5pt}table.data th,table.data td{padding:5px 7px}
+ .chart{max-height:200px}.status{border:1px solid var(--line2)}
+ a{color:inherit;text-decoration:none}
+ footer{font-size:9pt}
+}
+</style></head><body><div id="tip"></div><div class="wrap">
+<nav><div class="eyebrow">목차</div><a href="#s1">1. 한눈에 보기</a><a href="#s2">2. 화자와 역할</a><a href="#s3">3. 날짜별 논의</a><a href="#s4">4. 주제별 흐름과 결말</a>
+<a class="sub" href="#ghike">8/23 정기 산행</a><a class="sub" href="#gafter">뒷풀이와 신입 환영</a><a class="sub" href="#gops">모임 운영 (회비·단체티)</a><a class="sub" href="#gsocial">친목·일상</a>
+<a href="#s5">5. 열려 있거나 사라진 것</a><a href="#s6">6. 용어집</a></nav>
+<main>
+<header><h1>산들바람 등산회 8월 산행 준비</h1><p class="sub">8/23(토) 북한산 정기 산행을 앞둔 열흘 — 정해진 것, 진행 중인 것, 답 없이 남은 것</p><div class="src">산들바람 등산회 · 2026-08-03 ~ 2026-08-12</div>
+<div class="tiles"><div class="tile"><span class="tl">기간</span><div class="tv">7일</div><span class="td">2026-08-03 → 2026-08-12</span></div>
+<div class="tile"><span class="tl">화자</span><div class="tv">4명</div><span class="td">박준호 · 이수진 · 최민아 · 김태현</span></div>
+<div class="tile"><span class="tl">메시지</span><div class="tv">39</div><span class="td">하루 평균 6건 · 세션 14개</span></div>
+<div class="tile"><span class="tl">스레드</span><div class="tv">7</div><span class="td">해결 3 · 진행/담당 2 · 흐지부지 1</span></div></div></header>
+
+<section id="s1"><h2><span class="no">01</span>한눈에 보기</h2>
+<div class="summary"><ul><li>4명이 <b>8/23(토) 북한산 정기 산행</b>을 준비하는 열흘(8/3~8/12)의 대화. 39건, 하루 평균 6건 미만으로 조용하지만 잡담보다 실무 논의가 대부분이고, 세션은 대개 10~20분 안에 끝난다.</li><li><b>닫힌 것 3건</b>: 산행지·집결(북한산, 8/23 08:00 불광역 2번 출구 — 20분 만에 만장일치), 뒷풀이 예약(불광역 근처 막걸리집 15:00, 14명, 이수진 이름), 신입 환영은 뒷풀이 때 겸하고 자기소개 시간을 넣기로(진행 박준호).</li><li><b>진행 중 2건</b>: 단체티 견적은 김태현이 맡아 "이번 주 안에" → "수요일까지" → "내일 다시 재촉"으로 두 번 미뤄졌고 박준호가 두 번 재촉했다. 산행 준비물 공지는 이수진의 초안에 간식 항목이 더해진 단계로, 확정 공지는 아직이다.</li><li><b>흐지부지 1건</b>: 이수진의 회비 인상 제안(월 1만 → 1만5천, "반대 의견 있으면 말씀 주세요")은 열흘 동안 아무도 답하지 않았다. 뒷풀이 지원 재원을 위한 제안이었는데, 뒷풀이는 예약됐고 재원 문제는 그대로다.</li><li><b>미정으로 남은 것</b>: 신입 환영 준비물·선물("다음에 얘기하죠" 후 미개시), 단체티 사이즈 조사(최민아가 언급했지만 아무도 맡지 않음), 뒷풀이 인원 변동 최종 확인.</li><li><b>역할 패턴</b>: 박준호가 의제를 열고 사람을 지정하고 기한을 챙긴다. 이수진은 제안한 것을 같은 날 처리한다(예약 제안 → 5시간 반 뒤 완료). 최민아는 신입·분위기 쪽을 맡고 작은 보완을 더한다. 김태현은 아이디어를 내지만 실행이 늦다.</li><li><b>산행 전 확인 포인트</b>: 단체티 견적·주문(제작 기간을 감안하면 8/23까지 촉박), 준비물 최종 공지, 회비 인상 결론, 신입 선물 여부.</li></ul></div>
+<div class="statusline"><b>스레드 7개 상태</b><span class="status st-done">해결·결정 3</span><span class="status st-open">진행 중 2</span><span class="status st-drop">흐지부지 1</span><span class="status st-info">정보공유 1</span></div></section>
+
+<section id="s2"><h2><span class="no">02</span>화자와 역할</h2><p class="lead">발화량보다 '무엇을 가져오고 누구에게 어떻게 반응하는가'로 읽은 역할.</p>
+<div class="grid"><div class="card sp"><h3><span class="sw" style="background:var(--s1)"></span>박준호 <span class="role">운영 총괄 · 결정과 배정 (추정 회장)</span></h3>
+<p class="spstat">11건 (28.2%) · 평균 27.9자 · 사진 0 · 링크 0 · 파일 0 · 주 활동 9시·8시·19시</p><p>의제를 열고 닫는 사람. 산행 후보 3곳을 던져 20분 만에 "그럼 북한산으로 정합니다"(#4)로 마무리했고, 단체티는 태현에게(#13), 뒷풀이 예약은 수진에게(#18) 바로 맡겼다. 기한도 챙긴다 — 견적을 8/10과 8/12 두 번 물었지만 "넵 천천히 하세요"(#31)로 압박은 누른다.</p><p>신입 자기소개 진행을 스스로 맡았고(#33), 준비물·선물 논의는 "다음에"로 미뤘다. 비 소식 같은 안부 인사(#10)도 이 사람이 한다.</p></div><div class="card sp"><h3><span class="sw" style="background:var(--s2)"></span>이수진 <span class="role">실행 · 공지 담당 (추정 총무)</span></h3>
+<p class="spstat">10건 (25.6%) · 평균 37자 · 사진 0 · 링크 1 · 파일 0 · 주 활동 12시·9시·22시</p><p>요청과 실행 사이 거리가 가장 짧다. 뒷풀이 장소를 지도 링크로 제안(12:31)하고 예약을 부탁받자 "오늘 전화해볼게요" → 같은 날 18:02 "예약했어요! 8/23 오후 3시 14명, 제 이름으로"(#20). 산행 준비물 공지 초안(#34)도 먼저 내고 민아의 간식 제안을 곧장 반영했다.</p><p>회비 1만 → 1만5천 인상(#9)은 이 사람이 낸 유일하게 답을 못 받은 제안이다. 다시 꺼내지도 않았다.</p></div><div class="card sp"><h3><span class="sw" style="background:var(--s3)"></span>최민아 <span class="role">신입 · 분위기 담당, 보완 제안</span></h3>
+<p class="spstat">10건 (25.6%) · 평균 21.8자 · 사진 1 · 링크 0 · 파일 0 · 주 활동 13시·10시·9시</p><p>사람 쪽 의제를 가져온다. 신입 두 명의 환영회 방식을 물었고(#23) "제가 두 분한테 따로 물어볼게요"(#25) 뒤 이틀 만에 의견을 전달했다(#32). 다른 사람의 계획에 한 줄씩 보완을 더한다 — 단체티에 "사이즈 조사도"(#15), 준비물에 "간식 나눠먹을 거"(#35).</p><p>도봉산 사진(#6)을 올리고 "수고했어요 👍"(#21)로 격려하는 등 방의 온도를 유지하는 역할. 산행지 투표에서는 "백운대 코스 가고 싶어요"(#2)로 유일하게 코스까지 말했다.</p></div><div class="card sp"><h3><span class="sw" style="background:var(--s4)"></span>김태현 <span class="role">제안 · 단체티 견적 담당 (지연 중)</span></h3>
+<p class="spstat">8건 (20.5%) · 평균 28.7자 · 사진 1 · 링크 0 · 파일 0 · 주 활동 21시·19시·9시</p><p>단체티 주문을 제안하고(#12) 견적을 맡았지만 "이번 주 안에"(#14, 8/4) → "수요일까지"(#30, 8/10) → "내일 다시 재촉해볼게요"(#38, 8/12)로 기한을 두 번 넘겼다. 매번 사과가 먼저 나오고, 이유는 두 번째 업체의 무응답이다.</p><p>산행지 투표에 "관악산은 여름에 너무 더워서"(#3)로 근거를 댔고, 혼자 다녀온 인왕산 야경 사진(#27)을 올리는 등 개인 산행이 잦다. 발언량은 가장 적지만(8건) 밤 시간대에 주로 나타난다.</p></div></div></section>
+
+<section id="s3"><h2><span class="no">03</span>날짜별 논의</h2><p class="lead">막대는 그날 오간 메시지 수, 표는 그날 실제로 논의된 것.</p>
+<svg class="chart" viewBox="0 0 960 260" role="img" aria-label="일자별 메시지 수">
+<line x1="44" x2="944" y1="220.0" y2="220.0" class="grid"/><text x="38" y="224.0" class="tick" text-anchor="end">0</text>
+<line x1="44" x2="944" y1="152.7" y2="152.7" class="grid"/><text x="38" y="156.7" class="tick" text-anchor="end">5</text>
+<line x1="44" x2="944" y1="85.3" y2="85.3" class="grid"/><text x="38" y="89.3" class="tick" text-anchor="end">10</text>
+<line x1="44" x2="944" y1="18.0" y2="18.0" class="grid"/><text x="38" y="22.0" class="tick" text-anchor="end">15</text>
+<rect x="97.3" y="193.1" width="22.0" height="26.9" fill="var(--s1)" data-tip="2026-08-03 · 10건 — 박준호 2, 이수진 3, 최민아 3, 김태현 2"/>
+<rect x="97.3" y="152.7" width="22.0" height="38.4" fill="var(--s2)" data-tip="2026-08-03 · 10건 — 박준호 2, 이수진 3, 최민아 3, 김태현 2"/>
+<rect x="97.3" y="112.3" width="22.0" height="38.4" fill="var(--s3)" data-tip="2026-08-03 · 10건 — 박준호 2, 이수진 3, 최민아 3, 김태현 2"/>
+<path d="M97.3,112.3 V89.3 a4,4 0 0 1 4,-4 H115.3 a4,4 0 0 1 4,4 V112.3 Z" fill="var(--s4)" data-tip="2026-08-03 · 10건 — 박준호 2, 이수진 3, 최민아 3, 김태현 2"/>
+<text x="108.3" y="235" class="tick" text-anchor="middle">8/3</text>
+<text x="108.3" y="78.3" class="lab" text-anchor="middle">10</text>
+<rect x="225.9" y="193.1" width="22.0" height="26.9" fill="var(--s1)" data-tip="2026-08-04 · 6건 — 박준호 2, 최민아 2, 김태현 2"/>
+<rect x="225.9" y="166.1" width="22.0" height="24.9" fill="var(--s3)" data-tip="2026-08-04 · 6건 — 박준호 2, 최민아 2, 김태현 2"/>
+<path d="M225.9,166.1 V143.2 a4,4 0 0 1 4,-4 H243.9 a4,4 0 0 1 4,4 V166.1 Z" fill="var(--s4)" data-tip="2026-08-04 · 6건 — 박준호 2, 최민아 2, 김태현 2"/>
+<text x="236.9" y="235" class="tick" text-anchor="middle">4</text>
+<rect x="354.4" y="193.1" width="22.0" height="26.9" fill="var(--s1)" data-tip="2026-08-06 · 7건 — 박준호 2, 이수진 4, 최민아 1"/>
+<rect x="354.4" y="139.2" width="22.0" height="51.9" fill="var(--s2)" data-tip="2026-08-06 · 7건 — 박준호 2, 이수진 4, 최민아 1"/>
+<path d="M354.4,139.2 V129.7 a4,4 0 0 1 4,-4 H372.4 a4,4 0 0 1 4,4 V139.2 Z" fill="var(--s3)" data-tip="2026-08-06 · 7건 — 박준호 2, 이수진 4, 최민아 1"/>
+<text x="365.4" y="235" class="tick" text-anchor="middle">6</text>
+<rect x="483.0" y="206.5" width="22.0" height="13.5" fill="var(--s1)" data-tip="2026-08-08 · 6건 — 박준호 1, 이수진 1, 최민아 2, 김태현 2"/>
+<rect x="483.0" y="193.1" width="22.0" height="11.5" fill="var(--s2)" data-tip="2026-08-08 · 6건 — 박준호 1, 이수진 1, 최민아 2, 김태현 2"/>
+<rect x="483.0" y="166.1" width="22.0" height="24.9" fill="var(--s3)" data-tip="2026-08-08 · 6건 — 박준호 1, 이수진 1, 최민아 2, 김태현 2"/>
+<path d="M483.0,166.1 V143.2 a4,4 0 0 1 4,-4 H501.0 a4,4 0 0 1 4,4 V166.1 Z" fill="var(--s4)" data-tip="2026-08-08 · 6건 — 박준호 1, 이수진 1, 최민아 2, 김태현 2"/>
+<text x="494.0" y="235" class="tick" text-anchor="middle">8</text>
+<rect x="611.6" y="179.6" width="22.0" height="40.4" fill="var(--s1)" data-tip="2026-08-10 · 5건 — 박준호 3, 최민아 1, 김태현 1"/>
+<rect x="611.6" y="166.1" width="22.0" height="11.5" fill="var(--s3)" data-tip="2026-08-10 · 5건 — 박준호 3, 최민아 1, 김태현 1"/>
+<path d="M611.6,166.1 V156.7 a4,4 0 0 1 4,-4 H629.6 a4,4 0 0 1 4,4 V166.1 Z" fill="var(--s4)" data-tip="2026-08-10 · 5건 — 박준호 3, 최민아 1, 김태현 1"/>
+<text x="622.6" y="235" class="tick" text-anchor="middle">10</text>
+<rect x="740.1" y="193.1" width="22.0" height="26.9" fill="var(--s2)" data-tip="2026-08-11 · 3건 — 이수진 2, 최민아 1"/>
+<path d="M740.1,193.1 V183.6 a4,4 0 0 1 4,-4 H758.1 a4,4 0 0 1 4,4 V193.1 Z" fill="var(--s3)" data-tip="2026-08-11 · 3건 — 이수진 2, 최민아 1"/>
+<text x="751.1" y="235" class="tick" text-anchor="middle">11</text>
+<rect x="868.7" y="206.5" width="22.0" height="13.5" fill="var(--s1)" data-tip="2026-08-12 · 2건 — 박준호 1, 김태현 1"/>
+<path d="M868.7,206.5 V197.1 a4,4 0 0 1 4,-4 H886.7 a4,4 0 0 1 4,4 V206.5 Z" fill="var(--s4)" data-tip="2026-08-12 · 2건 — 박준호 1, 김태현 1"/>
+<text x="879.7" y="235" class="tick" text-anchor="middle">12</text>
+</svg><div class="legend"><span><i style="background:var(--s1)"></i>박준호</span><span><i style="background:var(--s2)"></i>이수진</span><span><i style="background:var(--s3)"></i>최민아</span><span><i style="background:var(--s4)"></i>김태현</span></div>
+<div class="tablewrap"><table class="data"><thead><tr><th>날짜</th><th>건수</th><th>논의</th></tr></thead><tbody><tr><td class='dnum'>8/03<span class='wk'>월</span></td><td class='num'>10</td><td>박준호가 정기 산행 후보 3곳(북한산·관악산·청계산)을 올리자 수진·민아·태현 모두 북한산 → 20분 만에 <b>북한산, 8/23 토 08:00 불광역 2번 출구</b> 확정. 오후 민아가 지난주 도봉산 사진 공유. 밤 수진이 <b>회비 1만 → 1만5천 인상</b>을 제안하며 반대 의견을 요청 — 응답 없음.</td></tr><tr><td class='dnum'>8/04<span class='wk'>화</span></td><td class='num'>6</td><td>아침 박준호 "비 온다는데 출근 조심" 인사. 저녁 태현이 <b>단체티 주문</b> 제안 → 박준호가 태현에게 업체 조사 요청, 태현 "이번 주 안에 견적" → 민아 "사이즈 조사도"(담당 없음). 전날 회비 제안은 아무도 언급 안 함.</td></tr><tr><td class='dnum'>8/06<span class='wk'>목</span></td><td class='num'>7</td><td>수진이 불광역 근처 막걸리집 지도 링크로 <b>뒷풀이 장소</b> 제안 → 박준호 승인·예약 요청(14명) → 수진 "오늘 전화해볼게요" → 저녁 6시 <b>예약 완료</b>(8/23 15:00, 14명, 수진 이름, 변동은 금요일까지). 민아·박준호 감사.</td></tr><tr><td class='dnum'>8/08<span class='wk'>토</span></td><td class='num'>6</td><td>민아가 <b>신입 2명 환영회</b>를 따로 할지 뒷풀이 때 겸할지 질문 → 박준호 "겸하되 신입 의견 들어보자" → 민아가 물어보기로. 밤 태현이 혼자 다녀온 인왕산 야경 사진, 수진 "혼산 부지런하시네요".</td></tr><tr><td class='dnum'>8/10<span class='wk'>월</span></td><td class='num'>5</td><td>박준호가 <b>단체티 견적 1차 재촉</b> → 태현 "업체 두 곳 중 한 곳만 답, 수요일까지 정리" → 박준호 "천천히 하세요". 오후 민아가 신입 의견 전달(겸하기 OK, 자기소개 시간만) → 박준호 <b>그날 진행 맡음</b>, 준비물·선물은 "다음에".</td></tr><tr><td class='dnum'>8/11<span class='wk'>화</span></td><td class='num'>3</td><td>밤 10시 수진이 <b>산행 준비물 공지 초안</b>(물 1.5L 이상 / 스틱 선택 / 점심 각자 / 우천 시 전날 20시 취소 공지) → 민아 "간식 나눠먹을 거" 제안 → 수진 "추가할게요". 박준호·태현은 무반응.</td></tr><tr><td class='dnum'>8/12<span class='wk'>수</span></td><td class='num'>2</td><td>약속한 수요일. 박준호 <b>단체티 견적 2차 재촉</b> "오늘 견적 올라오나요?" → 태현 "아직 두 번째 업체 답이 없어서.. 내일 다시 재촉해볼게요". 5분 뒤 대화 내보내기 종료.</td></tr></tbody></table></div></section>
+
+<section id="s4"><h2><span class="no">04</span>주제별 흐름과 결말</h2><p class="lead">같은 사안이 여러 날에 걸쳐 어떻게 시작되고 발전했는지, 누가 이어받았는지, 어떻게 끝났는지. 상태 배지: <span class="status st-done">해결·결정 3</span><span class="status st-open">진행 중 2</span><span class="status st-drop">흐지부지 1</span><span class="status st-info">정보공유 1</span></p>
+<div class="group" id="ghike"><h3>8/23 정기 산행 <span class="muted">2</span></h3><p class="gdesc">산행 자체를 준비하는 논의 — 어디로, 몇 시에, 무엇을 챙길지.</p><article class="topic" id="t0"><header><h4>8월 정기 산행지: 후보 3곳 → 북한산 만장일치 → 8/23 토 08:00 불광역 2번 출구</h4><span class="status st-done">결정(8/3)</span></header>
+<p class="tmeta">8/3 · 주도 박준호(의제·결정) · 참여 4인 전원</p>
+<p>8/3 09:12 박준호가 "이번 달 정기 산행 어디로 갈까요? 북한산 / 관악산 / 청계산"으로 투표를 열자 → 수진 "청계산은 저번에 갔으니 북한산" → 민아 "저도 북한산!! 백운대 코스 가고 싶어요" → 태현 "관악산은 여름에 너무 더워서 북한산 한 표" → 09:31 박준호 "그럼 북한산으로 정합니다 ㅎㅎ 날짜는 8/23 토요일 8시 불광역 2번 출구" → 수진 이모티콘으로 마무리.</p><p class="tend"><b>결말</b> 20분 만에 만장일치로 확정(#4). 이후 뒷풀이 예약과 준비물 공지가 모두 이 일정을 전제로 진행됐다. 민아가 말한 백운대 코스는 확정된 적 없음 — 희망 표현에 그침.</p></article><article class="topic" id="t1"><header><h4>산행 준비물 공지: 이수진 초안 → 간식 항목 추가 → 확정 공지 전</h4><span class="status st-open">진행 중(초안 단계)</span></header>
+<p class="tmeta">8/11 · 주도 이수진(작성) · 최민아(보완) · 참여 2인 / 이수진·최민아</p>
+<p>8/11 22:03 수진이 "산행 준비물 공지 초안입니다" — 물 1.5L 이상 / 스틱(선택) / 점심 각자 / 우천 시 전날 저녁 8시에 취소 여부 공지 — 를 올리고 "추가할 거 있으면 말씀 주세요" → 22:10 민아 "간식 조금씩 나눠먹을 거 챙기면 좋을 듯요" → 22:11 수진 "추가할게요". 박준호·태현은 반응 없음.</p><p class="tend"><b>결말</b> 초안이 공유되고 한 항목이 더해진 상태(#36)에서 내보내기 종료. 최종 공지가 게시됐다는 확인은 없다.</p><p class="tnext"><b>확인 포인트</b> 간식 항목이 반영된 확정 공지가 올라오는지. 박준호·태현이 추가 의견을 내는지.</p></article></div><div class="group" id="gafter"><h3>뒷풀이와 신입 환영 <span class="muted">2</span></h3><p class="gdesc">산행 뒤 모임. 장소 예약과 신입 두 명을 어떻게 맞을지.</p><article class="topic" id="t2"><header><h4>뒷풀이 장소: 막걸리집 링크 제안 → 예약 요청 → 당일 예약 완료(8/23 15:00, 14명)</h4><span class="status st-done">해결(8/6 당일)</span></header>
+<p class="tmeta">8/6 · 주도 이수진(제안·실행) · 박준호(승인) · 참여 3인 / 이수진·박준호·최민아</p>
+<p>8/6 12:30 수진이 네이버 지도 링크와 함께 "뒷풀이 여기 어때요? 불광역 근처 막걸리집, 20명까지 예약 가능하대요" → 12:40 박준호 "오 좋네요. 수진님이 예약 부탁드려도 될까요? 인원은 대충 14명" → 12:41 수진 "네 오늘 전화해볼게요" → 18:02 수진 "예약했어요! 8/23 오후 3시 14명, 제 이름으로. 변동 있으면 금요일까지 말해주세요" → 민아 "수고했어요 👍", 박준호 "감사합니다~".</p><p class="tend"><b>결말</b> 제안에서 예약 완료까지 5시간 반(#17→#20). 이 방에서 가장 빨리 닫힌 스레드. 인원 변동을 "금요일까지" 알려달라고 했지만 이후 인원 관련 언급은 없다(변동이 없었는지, 확인이 안 된 것인지는 대화만으로 불명).</p></article><article class="topic" id="t3"><header><h4>신입 2명 환영회: 따로 vs 겸하기 → 신입 의견 청취 → 뒷풀이 때 겸하고 자기소개 시간(진행 박준호) → 선물은 미정</h4><span class="status st-done">결정(8/10) · 선물은 보류</span></header>
+<p class="tmeta">8/8 → 8/10 · 주도 최민아(의제·의견 수렴) · 박준호(결정·진행) · 참여 2인 / 최민아·박준호</p>
+<p>8/8 10:15 민아 "이번에 신입 두 분 들어오셨는데 환영회 따로 할까요 아니면 산행 뒷풀이 때 겸할까요?" → 박준호 "뒷풀이 때 겸하는 게 편할 것 같긴 한데, 신입분들 의견도 들어봐야 할 듯" → 민아 "제가 두 분한테 따로 물어볼게요" → 8/10 15:14 민아 "신입분들은 뒷풀이 때 겸하는 거 좋다고 하셔요. 대신 간단히 자기소개 시간만 넣어달라고" → 박준호 "좋아요 그럼 그날 제가 진행할게요. 준비물이나 선물 같은 건 어떻게 할지 다음에 얘기하죠".</p><p class="tend"><b>결말</b> 형식(뒷풀이 때 겸하기 + 자기소개 시간)과 진행자(박준호)가 정해짐(#33). 민아가 맡은 의견 청취는 이틀 만에 이행됐다. 다만 박준호가 "다음에"로 미룬 준비물·선물 논의는 8/12까지 열리지 않았다.</p><p class="tnext"><b>확인 포인트</b> 신입 선물·준비물 논의가 실제로 열리는지. 8/23 뒷풀이에서 자기소개 시간이 진행되는지는 내보내기 이후.</p></article></div><div class="group" id="gops"><h3>모임 운영 (회비·단체티) <span class="muted">2</span></h3><p class="gdesc">산행과 별개로 굴러가는 운영 안건. 둘 다 아직 열려 있다.</p><article class="topic" id="t4"><header><h4>회비 인상 제안(월 1만 → 1만5천): 반대 의견 요청 → 열흘간 무응답</h4><span class="status st-drop">흐지부지(무응답)</span></header>
+<p class="tmeta">8/3 · 주도 이수진(제안) · 참여 1인 / 이수진</p>
+<p>8/3 20:40 수진이 산행지 결정이 끝난 밤에 "그리고 회비 얘기인데요 — 지금 월 1만원으로는 뒷풀이 지원이 안 돼서 1만5천으로 올리는 건 어떨까요? 반대 의견 있으면 말씀 주세요" → 다음 날 아침 박준호는 비 소식 인사만(#10), 저녁엔 단체티 얘기로 넘어감(#12) → 8/12까지 누구도 찬성·반대·재언급 없음. 수진 본인도 다시 꺼내지 않았다.</p><p class="tend"><b>결말</b> 질문 형태의 제안에 열흘간 단 한 건의 응답도 없었다(#9 이후). "반대 없으면 통과"로 볼 수도 있으나 대화 안에 그런 합의는 없다(추정). 인상 사유였던 뒷풀이 지원은 재원 논의 없이 뒷풀이 예약(8/6)만 먼저 진행됐다.</p><p class="tnext"><b>확인 포인트</b> 회비 인상 여부가 결정되는지, 8/23 뒷풀이 비용을 회비에서 얼마나 지원할지.</p></article><article class="topic" id="t5"><header><h4>단체티 주문: 김태현 제안·견적 담당 → &quot;이번 주 안에&quot; → 1차 재촉·&quot;수요일까지&quot; → 2차 재촉·&quot;내일 재촉&quot;</h4><span class="status st-open">진행 중(2회 지연)</span></header>
+<p class="tmeta">8/4 → 8/10 → 8/12 · 주도 김태현(실행) · 박준호(재촉) · 참여 3인 / 김태현·박준호·최민아</p>
+<p>8/4 19:45 태현 "단체티 얘기 나왔던 거 이번에 주문할까요? 산행 때 입으면 좋을 듯" → 박준호 "좋아요. 태현님이 업체 알아봐 주실 수 있어요?" → 태현 "네 제가 견적 받아서 이번 주 안에 올릴게요" → 민아 "사이즈 조사도 해야겠네요"(아무도 받지 않음) → 8/10 09:05 박준호 "태현님 단체티 견적 어떻게 됐어요?" → 태현 "아 죄송해요 업체 두 곳 연락했는데 한 곳만 답 와서요. 수요일까지 정리해서 올릴게요" → 박준호 "넵 천천히 하세요" → 8/12(수) 20:55 박준호 "태현님 오늘 견적 올라오나요?" → 태현 "죄송합니다 아직 두 번째 업체 답이 없어서.. 내일 다시 재촉해볼게요".</p><p class="tend"><b>결말</b> 담당자는 정해졌고 작업은 진행 중이나 기한을 두 번 넘긴 채 열려 있음(#38). 태현은 업체 한 곳의 견적은 이미 받았다고 했지만 그것을 먼저 공유하지는 않았다. 민아가 말한 사이즈 조사(#15)는 담당자가 없다.</p><p class="tnext"><b>확인 포인트</b> 8/13 이후 견적이 올라오는지. 8/23 산행 전에 입을 수 있도록 제작 기간이 남는지. 사이즈 조사를 누가 할지.</p></article></div><div class="group" id="gsocial"><h3>친목·일상 <span class="muted">1</span></h3><p class="gdesc">개인 산행 사진 공유 같은, 결정을 요구하지 않는 대화.</p><article class="topic" id="t6"><header><h4>개인 산행 사진 공유: 도봉산(최민아) → 인왕산 야경(김태현)</h4><span class="status st-info">정보공유</span></header>
+<p class="tmeta">8/3 → 8/8 · 주도 최민아 · 김태현 · 참여 3인 / 최민아·김태현·이수진</p>
+<p>8/3 13:05 민아 "지난주 도봉산 사진 올려요~" + 사진 → 태현 "와 하늘 미쳤네" → 8/8 21:00 태현 "오늘 혼자 인왕산 다녀왔습니다 야경 굿" + 사진 → 수진 "혼산 부지런하시네요".</p><p class="tend"><b>결말</b> 결정을 요구하지 않는 공유. 정기 산행 사이에도 각자 산에 다니고 그 사진에 서로 짧게 반응하는 것이 이 방의 일상적 리듬이다.</p></article></div></section>
+
+<section id="s5"><h2><span class="no">05</span>열려 있거나 사라진 것</h2><p class="lead">담당만 정해졌거나, 진행 중이거나, 답 없이 사라진 스레드. 후속 확인이 필요한 목록이다.</p>
+<div class="tablewrap"><table class="data"><thead><tr><th>상태</th><th>스레드</th><th>주도</th><th>확인 포인트 / 마지막 상태</th></tr></thead><tbody><tr><td><span class="status st-drop">흐지부지(무응답)</span></td><td><a href='#t4'>회비 인상 제안(월 1만 → 1만5천): 반대 의견 요청 → 열흘간 무응답</a></td><td>이수진(제안)</td><td>회비 인상 여부가 결정되는지, 8/23 뒷풀이 비용을 회비에서 얼마나 지원할지.</td></tr><tr><td><span class="status st-open">진행 중(초안 단계)</span></td><td><a href='#t1'>산행 준비물 공지: 이수진 초안 → 간식 항목 추가 → 확정 공지 전</a></td><td>이수진(작성) · 최민아(보완)</td><td>간식 항목이 반영된 확정 공지가 올라오는지. 박준호·태현이 추가 의견을 내는지.</td></tr><tr><td><span class="status st-open">진행 중(2회 지연)</span></td><td><a href='#t5'>단체티 주문: 김태현 제안·견적 담당 → &quot;이번 주 안에&quot; → 1차 재촉·&quot;수요일까지&quot; → 2차 재촉·&quot;내일 재촉&quot;</a></td><td>김태현(실행) · 박준호(재촉)</td><td>8/13 이후 견적이 올라오는지. 8/23 산행 전에 입을 수 있도록 제작 기간이 남는지. 사이즈 조사를 누가 할지.</td></tr></tbody></table></div></section>
+
+<section id="s6"><h2><span class="no">06</span>용어집</h2><div class="tablewrap"><table class="data"><thead><tr><th>이름</th><th>대화 맥락에서 파악한 것</th></tr></thead><tbody><tr><th scope='row'>산들바람 등산회</th><td>이 방의 이름. 등산 동호회. 뒷풀이 예상 인원 14명 + 신입 2명으로 볼 때 십수 명 규모(추정).</td></tr><tr><th scope='row'>정기 산행</th><td>월 1회 단체 산행. 이번 달은 8/23(토) 북한산, 08:00 불광역 2번 출구 집결.</td></tr><tr><th scope='row'>북한산 / 관악산 / 청계산</th><td>8월 산행지 후보. 청계산은 "저번에 갔다"(#1). 북한산으로 결정.</td></tr><tr><th scope='row'>백운대</th><td>북한산 정상부 코스. 민아가 희망(#2)했으나 코스로 확정된 언급은 없음.</td></tr><tr><th scope='row'>도봉산 / 인왕산</th><td>민아(8/3), 태현(8/8)이 개인적으로 다녀와 사진을 올린 산.</td></tr><tr><th scope='row'>불광역 근처 막걸리집</th><td>8/23 뒷풀이 장소. 20명까지 예약 가능, 15:00 14명 이수진 이름으로 예약(#20). 네이버 지도 링크로 공유됨.</td></tr><tr><th scope='row'>뒷풀이</th><td>산행 후 회식. 신입 환영을 겸하기로 함. 회비 인상 제안의 명분이기도 했다.</td></tr><tr><th scope='row'>신입 두 분</th><td>8/8 시점에 새로 들어온 회원 2명. 이름은 대화에 나오지 않음. 뒷풀이 때 자기소개 시간을 원함.</td></tr><tr><th scope='row'>단체티</th><td>동호회 단체 티셔츠. "얘기 나왔던 거"(#12)로 보아 이전부터 거론됐던 사안(추정). 김태현이 업체 2곳에 견적 요청 중.</td></tr><tr><th scope='row'>혼산</th><td>혼자 하는 산행(은어). 태현의 인왕산 산행을 수진이 이렇게 불렀다(#28).</td></tr></tbody></table></div></section>
+
+<footer><ul><li>원본: 안드로이드 카카오톡 내보내기 형식("2026년 8월 3일 오전 9:12, 이름 : "), 저장 시점 2026-08-12 21:10. 마지막 메시지(21:05) 5분 뒤에 내보내져 8/12 이후의 진행은 알 수 없다.</li><li>39건 중 사진 2건·이모티콘 1건은 미디어 표시로, 네이버 지도 링크 1건은 링크로 처리했다. 활동 없는 날(8/5, 8/7, 8/9)은 차트와 표에서 생략.</li><li>전화번호·계좌번호 등 민감정보는 대화에 노출되지 않았다. 스레드 상태는 마지막 언급 기준이며, 8/23 산행 자체는 내보내기 이후라 판단 대상이 아니다.</li><li>화자 역할(회장·총무 등)은 대화 안에서 명시되지 않아 행동 패턴에서 추정한 것이다.</li></ul>세션 = 앞 메시지와 60분 이상 벌어지면 새 세션. 사진·파일은 표시만 남고 내용은 없음. 생성 2026-09-12</footer>
+</main></div>
+<script>(function(){var t=document.getElementById('tip');document.addEventListener('mousemove',function(ev){var el=ev.target.closest&&ev.target.closest('[data-tip]');if(!el){t.style.opacity=0;return}t.textContent=el.getAttribute('data-tip');t.style.opacity=1;var x=ev.clientX+14,y=ev.clientY+14;if(x+t.offsetWidth>innerWidth-8)x=ev.clientX-t.offsetWidth-10;if(y+t.offsetHeight>innerHeight-8)y=ev.clientY-t.offsetHeight-10;t.style.left=x+'px';t.style.top=y+'px'})})();</script>
+</body></html>
