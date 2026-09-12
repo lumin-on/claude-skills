@@ -12,7 +12,7 @@
 
 키워드 빈도나 방법론 설명은 넣지 않습니다. "무슨 얘기가 오갔고 무엇이 남았는가"만 다룹니다.
 
-**결과 샘플** (가상의 등산 동호회 대화 39건으로 생성): [웹페이지로 보기](https://amber-on.github.io/claude-skills/samples/kakao-chat-analysis/report.html) · [PDF](../../docs/samples/kakao-chat-analysis/report.pdf) · [HTML 원본](../../docs/samples/kakao-chat-analysis/report.html)
+**결과 샘플** (가상의 등산 동호회 대화 39건으로 생성): [웹페이지로 보기](https://lumin-on.github.io/claude-skills/samples/kakao-chat-analysis/report.html) · [PDF](../../docs/samples/kakao-chat-analysis/report.pdf) · [HTML 원본](../../docs/samples/kakao-chat-analysis/report.html)
 
 ![보고서 미리보기](../../docs/samples/kakao-chat-analysis/preview.png)
 
@@ -38,7 +38,7 @@
 ### 1) 받기
 
 ```bash
-git clone https://github.com/amber-on/claude-skills.git
+git clone https://github.com/lumin-on/claude-skills.git
 ```
 
 또는 GitHub 페이지의 **Code → Download ZIP**으로 받아 압축을 풉니다.
