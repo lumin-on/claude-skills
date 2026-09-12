@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.kakao-analysis/
+*.skill
+# never commit real chat exports or generated reports
+KakaoTalk_*.txt
+*_논의분석.html
+*_논의분석.pdf

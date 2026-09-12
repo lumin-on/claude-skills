@@ -1,0 +1,17 @@
+{
+  "skill_name": "kakao-chat-analysis",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "카톡 단톡방 대화 내보낸 파일이야. 이 방에 누가 있고 무슨 얘기들이 오갔는지, 얘기가 어떻게 흘러가서 어떻게 끝났는지 정리해줘. 사람이 읽기 좋은 html로.",
+      "expected_output": "HTML report with speaker roles, day-by-day digest, thread cards with status (done/assigned/open/drop/info), and an unresolved list; no methodology sections.",
+      "files": ["sample_chat_mobile.txt"]
+    },
+    {
+      "id": 2,
+      "prompt": "우리 동호회 오픈채팅 로그인데 (첨부) 지난달에 결정된 게 뭔지, 누가 하기로 했는데 안 한 게 뭔지 알고 싶어. 표로 정리해서 보여줘.",
+      "expected_output": "HTML report whose 'open or dropped' table lists assigned-but-unfulfilled items with the person responsible, plus decisions marked done.",
+      "files": ["sample_chat_mobile.txt"]
+    }
+  ]
+}
