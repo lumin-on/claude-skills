@@ -14,7 +14,7 @@ kakao-chat-analysis가 만든 보고서입니다. 가상의 등산 동호회 대
 
 ![kakao-chat-analysis 보고서 미리보기](docs/samples/kakao-chat-analysis/preview.png)
 
-- 웹페이지로 보기: https://kyungminiyang.github.io/claude-skills/samples/kakao-chat-analysis/report.html
+- 웹페이지로 보기: https://amber-on.github.io/claude-skills/samples/kakao-chat-analysis/report.html
 - PDF로 보기: [report.pdf](docs/samples/kakao-chat-analysis/report.pdf)
 - HTML 원본: [report.html](docs/samples/kakao-chat-analysis/report.html)
 
@@ -35,7 +35,7 @@ GitHub는 저장소 안의 HTML 파일을 클릭하면 소스 코드로만 보�
 ## 설치
 
 ```bash
-git clone https://github.com/kyungminiyang/claude-skills.git
+git clone https://github.com/amber-on/claude-skills.git
 ```
 
 또는 **Code → Download ZIP**.
