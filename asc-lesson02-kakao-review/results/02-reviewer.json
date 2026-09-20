@@ -1,0 +1,84 @@
+{
+  "reviews": [
+    {
+      "topic_id": "place_booking",
+      "verdict": "accept",
+      "reason": "9/14 완료 보고(L005)가 9/15 취소 보고(L013)로 뒤집힌 사실을 정확히 반영했고, L014에서 진행자A가 '새 담당은 아직 정하지 않겠습니다'라고 명시했음에도 이전 담당자B를 임의로 신규 담당자로 재지정하지 않았다. status를 null/'판단 보류'로 두고 기존 4개 범주 어디에도 억지로 끼워 맞추지 않은 점이 타당하다. 인용도 원문과 정확히 일치한다.",
+      "evidence": [
+        { "line": "L005", "quote": "회의실 예약 완료했습니다." },
+        { "line": "L013", "quote": "센터 사정으로 어제 완료한 회의실 예약이 취소됐어요. 대체 장소는 아직 못 구했습니다." },
+        { "line": "L014", "quote": "장소는 다시 찾아야겠네요. 새 담당은 아직 정하지 않겠습니다." }
+      ],
+      "proposed_change": "",
+      "assumptions": [],
+      "counter_evidence": [],
+      "unknowns": []
+    },
+    {
+      "topic_id": "poster",
+      "verdict": "accept",
+      "reason": "담당 지정(L007)과 완료를 혼동하지 않고, L015/L016에서 제목 확인만 있었을 뿐 완성·제출 발언이 없다는 점을 명확히 unknowns에 남겼다. 인용이 원문과 정확히 일치한다.",
+      "evidence": [
+        { "line": "L007", "quote": "제가 금요일까지 포스터 만들어볼게요." },
+        { "line": "L016", "quote": "네, 제목은 그대로예요." }
+      ],
+      "proposed_change": "",
+      "assumptions": [],
+      "counter_evidence": [],
+      "unknowns": []
+    },
+    {
+      "topic_id": "fee_and_payment_deadline",
+      "verdict": "accept",
+      "reason": "최초 마감(목요일, L008)이 최종적으로 금요일(L018)로 변경된 사실을 '결정'으로만 표시하고 '완료/이행'으로 확대 해석하지 않았다. 참가비는 불변임을 정확히 반영했다. deadline 필드에 최종값(금요일)만 남겨 이전 값과 혼동하지 않았다.",
+      "evidence": [
+        { "line": "L008", "quote": "참가비는 1만 원으로 정하고 입금 마감은 목요일로 합시다." },
+        { "line": "L018", "quote": "좋아요. 참가비는 그대로 두고 입금 마감만 금요일로 바꿉니다." }
+      ],
+      "proposed_change": "",
+      "assumptions": [],
+      "counter_evidence": [],
+      "unknowns": []
+    },
+    {
+      "topic_id": "presentation_material",
+      "verdict": "accept",
+      "reason": "L010의 '수요일 공유' 예정과 L019의 '계속 작성 중' 재확인을 정확히 구분했고, 관찰 구간이 화요일(9/15)에 종료되어 수요일 공유 여부를 확인할 수 없다는 점을 unknowns로 남겨 완료를 임의로 단정하지 않았다.",
+      "evidence": [
+        { "line": "L010", "quote": "발표 자료는 초안 작성 중입니다. 수요일에 다시 공유할게요." },
+        { "line": "L019", "quote": "발표 자료 초안은 계속 작성 중입니다." }
+      ],
+      "proposed_change": "",
+      "assumptions": [],
+      "counter_evidence": [],
+      "unknowns": []
+    },
+    {
+      "topic_id": "lunch_order",
+      "verdict": "revise",
+      "reason": "L009 질문(점심 공동 주문)이 관찰 구간 내내 답 없는 질문으로 남은 것은 원문과 일치하나, 이를 '흐지부지'로 명명하고 certainty를 '확정'으로 표시한 것은 근거 대비 과잉 확정이다. 관찰 구간은 하루(9/14 오전)~이튿날(9/15) 오전까지로 짧고, L020에서 진행자A가 '오늘 대화는 여기까지'라고 한 것은 그날 대화 종료일 뿐 안건이 영구적으로 방치되었다는 근거는 아니다. 실제로 analyst 자신도 conclusion에서 '영구 방치로 단정하지는 않음'이라고 명시해 status label('흐지부지')·certainty('확정')와 conclusion 텍스트 사이에 내적 모순이 있다.",
+      "evidence": [
+        { "line": "L009", "quote": "점심을 함께 주문할까요?" },
+        { "line": "L020", "quote": "오늘 대화는 여기까지 하겠습니다." }
+      ],
+      "proposed_change": "status를 '흐지부지' 대신 '미응답(관찰 종료 시점 기준)' 또는 '응답 대기'로 바꾸고, certainty도 '확정'에서 '관찰 구간 한정 확정'처럼 범위를 명시하거나 '다소 불확실'로 낮출 것을 제안. conclusion의 자기모순(방치 단정 보류하면서 상태는 흐지부지로 확정)을 해소해야 함.",
+      "assumptions": [],
+      "counter_evidence": [],
+      "unknowns": ["관찰 구간 종료 이후 점심 주문 논의 재개 여부"]
+    },
+    {
+      "topic_id": "icon_resource_share",
+      "verdict": "accept",
+      "reason": "결정이나 응답을 요구하지 않는 단순 정보 공유로 정확히 분류했고, 이후 언급이 없다는 점도 원문과 일치한다.",
+      "evidence": [
+        { "line": "L011", "quote": "참고용 무료 아이콘 모음이 있다는 정보 공유합니다." }
+      ],
+      "proposed_change": "",
+      "assumptions": [],
+      "counter_evidence": [],
+      "unknowns": []
+    }
+  ],
+  "missing_topics": [],
+  "overall": "6개 안건 중 5개(place_booking, poster, fee_and_payment_deadline, presentation_material, icon_resource_share)는 원문 대조 결과 예약 취소·담당 지정과 완료의 혼동·최종 기한 변경·결정과 이행의 구분을 모두 정확히 처리했고 인용도 원문과 일치해 accept한다. lunch_order 1건은 답 없는 질문(L009)을 올바르게 포착했으나, 짧은 관찰 구간에서 '흐지부지'·certainty '확정'으로 단정한 것이 conclusion 텍스트의 유보적 서술과 모순되어 revise를 제안한다(라벨을 '미응답/응답 대기'로 완화 권고). 원문 전체를 재대조한 결과 누락된 안건은 없다."
+}

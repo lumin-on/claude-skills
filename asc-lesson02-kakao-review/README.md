@@ -12,37 +12,6 @@
 
 실제 카카오톡 원문, 실명·연락처·계좌, 비밀번호·토큰, 설정 비밀값은 포함하지 않습니다. 기존 1강 파일은 변경하지 않습니다.
 
-## 파일을 바로 확인하기
-
-**[압축을 푼 프로젝트 폴더 열기](./asc-lesson02-kakao-review/)**
-
-| 확인할 내용 | 파일 |
-|---|---|
-| Subagent A: 안건 분석자 | [정의 보기](./asc-lesson02-kakao-review/.claude/agents/kakao-agenda-analyst.md) |
-| Subagent B: 근거 검토자 | [정의 보기](./asc-lesson02-kakao-review/.claude/agents/kakao-evidence-reviewer.md) |
-| Skill 절차 | [SKILL.md](./asc-lesson02-kakao-review/.claude/skills/kakao-agenda-review/SKILL.md) |
-| 가상 대화 | [원문](./asc-lesson02-kakao-review/examples/synthetic-chat.txt) |
-| 실제 전달한 프롬프트 | [prompts 폴더](./asc-lesson02-kakao-review/prompts/) |
-| 실제 실행 결과 | [results 폴더](./asc-lesson02-kakao-review/results/) |
-| 최종 보고서 | [Markdown 보고서](./asc-lesson02-kakao-review/results/final-report.md) |
-| 판단 조율 과정 | [coordination.md](./asc-lesson02-kakao-review/results/coordination.md) |
-| 프로세스 | [PROCESS.md](./asc-lesson02-kakao-review/PROCESS.md) |
-| 실행 환경·한계 | [RUN.md](./asc-lesson02-kakao-review/RUN.md) |
-
-## 다운로드
-
-[원본 ZIP](./asc-lesson02-kakao-review.zip)은 다운로드용으로 유지합니다. 위 폴더의 18개 파일은 원본 ZIP과 같은 내용입니다.
-
-## 윈도우 앱에서 실제 테스트
-
-Claude 앱의 **Code 탭 → Local → Select folder**에서 압축을 푼 프로젝트 폴더를 선택합니다. 저장소 전체를 내려받았다면 그 안의 **asc-lesson02-kakao-review 폴더**를 선택하세요. 일반 채팅의 스킬 업로드 화면은 사용하지 않습니다.
-
-- A를 먼저 별도 Subagent로 호출하고, B에게 원문과 방금 만든 A 결과를 전달합니다.
-- 기존 results는 과거 실행 기록이므로 정답으로 재사용하거나 덮어쓰지 않습니다.
-- 새 결과는 runs/test-01 같은 별도 로컬 폴더에 저장합니다. 실제 대화와 새 실행 결과는 공개 저장소에 무심코 올리지 마세요.
-- scripts/verify.mjs만 실행하는 것은 보관된 JSON 검사이지 새로운 Subagent 실행이 아닙니다.
-- 두 Subagent를 실제 호출할 수 없으면 역할극으로 대체하지 말고 중단하도록 요청하세요.
-
 ## 구성
 - .claude/agents/kakao-agenda-analyst.md: 안건 상태 분석자
 - .claude/agents/kakao-evidence-reviewer.md: 근거 검토자
@@ -60,8 +29,8 @@ Claude 앱의 **Code 탭 → Local → Select folder**에서 압축을 푼 프�
 
 ## 재실행
 ### Claude Code에서 판단 단계 재실행
-1. 이 저장소의 asc-lesson02-kakao-review 폴더(또는 ZIP을 푼 폴더)를 프로젝트로 엽니다. .claude 폴더가 포함돼 있는지 확인합니다.
-2. Claude Code에 '.claude/skills/kakao-agenda-review/SKILL.md 절차대로 examples/synthetic-chat.txt를 분석해줘. kakao-agenda-analyst와 kakao-evidence-reviewer를 별도 Subagent로 순차 호출하고 기존 prompts/results는 참고하거나 덮어쓰지 말고 새 runs/test-01 폴더에 실제 입력·결과를 남겨줘. 외부 게시/발송은 하지 마.'라고 요청합니다.
+1. 압축을 풀고 이 패키지 폴더를 프로젝트로 엽니다. .claude 폴더가 포함돼 있는지 확인합니다.
+2. Claude Code에 '.claude/skills/kakao-agenda-review/SKILL.md 절차대로 examples/synthetic-chat.txt를 분석해줘. kakao-agenda-analyst와 kakao-evidence-reviewer를 별도 Subagent로 순차 호출하고 prompts와 results에 실제 입력·결과를 남겨줘. 외부 게시/발송은 하지 마.'라고 요청합니다.
 3. Claude Code의 Subagent 인식 및 실제 실행 여부를 확인하세요. 이 패키지의 이번 실측 환경은 Aside이며 Claude Code 호환 실행은 아직 검증하지 않았습니다.
 4. 모델은 로컬 설정을 사용하도록 정의 파일에서 고정하지 않았습니다. 실행 모델에 따라 판단 결과가 달라질 수 있습니다.
 

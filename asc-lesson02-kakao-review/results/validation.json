@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "errors": [],
+  "citations_checked": 42,
+  "analyst_topics": 6,
+  "reviewed_topics": 6,
+  "final_topics": 6,
+  "negative_test_rejects_bad_quote": true,
+  "execution": "Aside JavaScript REPL에서 scripts/core.mjs 함수 본문을 그대로 실행. Node CLI 실행은 하지 않음."
+}

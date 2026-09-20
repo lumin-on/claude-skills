@@ -2,6 +2,15 @@
 
 Claude Code용 스킬 모음입니다. 스킬 하나가 폴더 하나이고, 각 폴더에 `SKILL.md`(Claude가 읽는 절차)와 필요한 스크립트·참고 문서·예시가 들어 있습니다.
 
+## ASC 2강: Subagent 분석·검토
+
+- **[2강 파일 폴더 바로 보기](asc-lesson02-kakao-review/)**: Subagent 2개, Skill, 합성 예제, 실제 프롬프트·응답을 파일별로 확인합니다.
+- **[과제 설명 및 빠른 링크](ASC-LESSON02.md)**
+- **[최종 보고서](asc-lesson02-kakao-review/results/final-report.md)** · **[판단 조율 기록](asc-lesson02-kakao-review/results/coordination.md)**
+- [다운로드용 원본 ZIP](asc-lesson02-kakao-review.zip)은 그대로 유지합니다.
+
+이 폴더는 Claude Code용 프로젝트입니다. 일반 Claude 채팅에 ZIP을 스킬로 등록하는 방식과 다릅니다. 보관된 실제 실행은 Aside Subagent 환경이며 이 제출본은 Claude Code 재실행 검증을 포함하지 않습니다.
+
 ## 스킬 목록
 
 | 스킬 | 무엇을 하나 | 상세 |
@@ -73,5 +82,5 @@ claude-skills/
 ## 원칙
 
 - 스킬 폴더에는 **실제 개인 데이터를 넣지 않습니다.** 예시와 테스트는 모두 합성 데이터입니다.
-- 스크립트는 파이썬 표준 라이브러리만 씁니다. 외부 패키지가 필요하면 스킬 README에 명시합니다.
+- 1강 스킬은 Python 표준 라이브러리, 2강 검증 실험은 Node.js 표준 라이브러리를 사용합니다. 외부 패키지가 필요하면 해당 README에 명시합니다.
 - 결과물(보고서·작업 폴더)은 `.gitignore`로 제외돼 있습니다.

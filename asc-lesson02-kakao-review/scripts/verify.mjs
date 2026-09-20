@@ -1,0 +1,16 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {numberLines,validate,render} from './core.mjs';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const read=p=>fs.readFileSync(path.join(root,p),'utf8');
+const source=read('examples/synthetic-chat.txt');
+const a=JSON.parse(read('results/01-analyst.json'));
+const b=JSON.parse(read('results/02-reviewer.json'));
+const f=JSON.parse(read('results/03-final.json'));
+const result=validate(a,b,f,source);
+console.log(JSON.stringify(result,null,2));
+if (!result.passed) process.exit(1);
+fs.writeFileSync(path.join(root,'examples/indexed-chat.txt'),numberLines(source));
+fs.writeFileSync(path.join(root,'results/final-report.md'),render(f));
+fs.writeFileSync(path.join(root,'results/validation.json'),JSON.stringify(result,null,2));
