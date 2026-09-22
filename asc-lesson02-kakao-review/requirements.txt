@@ -1,0 +1,3 @@
+# kakao-agenda-review 가 쓰는 외부 도구
+tiktoken>=0.14      # https://github.com/openai/tiktoken   — 토큰 기준 청크 분할
+rapidfuzz>=3.14     # https://github.com/rapidfuzz/RapidFuzz — 인용 줄 자동 탐색

@@ -1,0 +1,14 @@
+{
+  "indexed": "runs/test-03/work/indexed.txt",
+  "files": [
+    "C:/Users/k1k1m1/.aside/u/0/sessions/2026-09-20_FmbHufXBEB9e2y4b/artifacts/asc-lesson02-kakao-review/runs/test-03/chunks/c1-reviewer-output.json",
+    "C:/Users/k1k1m1/.aside/u/0/sessions/2026-09-20_FmbHufXBEB9e2y4b/artifacts/asc-lesson02-kakao-review/runs/test-03/chunks/c2-reviewer-output.json",
+    "C:/Users/k1k1m1/.aside/u/0/sessions/2026-09-20_FmbHufXBEB9e2y4b/artifacts/asc-lesson02-kakao-review/runs/test-03/chunks/c3-reviewer-output.json",
+    "C:/Users/k1k1m1/.aside/u/0/sessions/2026-09-20_FmbHufXBEB9e2y4b/artifacts/asc-lesson02-kakao-review/runs/test-03/chunks/c4-reviewer-output.json"
+  ],
+  "citations_checked": 88,
+  "mismatches": 0,
+  "auto_fixable": 0,
+  "tool": "rapidfuzz/RapidFuzz (https://github.com/rapidfuzz/RapidFuzz)",
+  "problems": []
+}

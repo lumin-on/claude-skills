@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.kakao-analysis/
+*.skill
+node_modules/
+package-lock.json
+# 실제 대화 내보내기와 그 산출물은 절대 커밋하지 않는다
+KakaoTalk_*.txt
+*_논의.txt
+*_단톡방*.txt
+*_논의분석.html
+*_논의분석.pdf
+# 실제 대화로 돌린 실행 결과 — 실명·연락처·인증번호가 있어 절대 커밋 금지
+runs/test-02/
+submit/

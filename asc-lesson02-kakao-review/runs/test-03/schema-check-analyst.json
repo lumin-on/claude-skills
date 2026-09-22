@@ -1,0 +1,35 @@
+{
+  "schema": "schemas/analyst-output.schema.json",
+  "schema_id": "kakao-agenda-review/analyst-output",
+  "tool": "ajv-validator/ajv (https://github.com/ajv-validator/ajv)",
+  "ajv_version": "8.20.0",
+  "files_checked": 4,
+  "total_errors": 0,
+  "results": [
+    {
+      "file": "C:/Users/k1k1m1/.aside/u/0/sessions/2026-09-20_FmbHufXBEB9e2y4b/artifacts/asc-lesson02-kakao-review/runs/test-03/chunks/c1-analyst-output.json",
+      "valid": true,
+      "error_count": 0,
+      "errors": []
+    },
+    {
+      "file": "C:/Users/k1k1m1/.aside/u/0/sessions/2026-09-20_FmbHufXBEB9e2y4b/artifacts/asc-lesson02-kakao-review/runs/test-03/chunks/c2-analyst-output.json",
+      "valid": true,
+      "error_count": 0,
+      "errors": []
+    },
+    {
+      "file": "C:/Users/k1k1m1/.aside/u/0/sessions/2026-09-20_FmbHufXBEB9e2y4b/artifacts/asc-lesson02-kakao-review/runs/test-03/chunks/c3-analyst-output.json",
+      "valid": true,
+      "error_count": 0,
+      "errors": []
+    },
+    {
+      "file": "C:/Users/k1k1m1/.aside/u/0/sessions/2026-09-20_FmbHufXBEB9e2y4b/artifacts/asc-lesson02-kakao-review/runs/test-03/chunks/c4-analyst-output.json",
+      "valid": true,
+      "error_count": 0,
+      "errors": []
+    }
+  ],
+  "generated_at": "2026-09-22T12:38:28.055Z"
+}

@@ -1,0 +1,292 @@
+{
+  "generated_at": "2026-09-22T12:45:42.467Z",
+  "schema_note": "B가 제안한 '추정'·'잠정' 계열 값은 agent 정의의 certainty 허용값(확정/판단 보류) 밖이라 '판단 보류'로 매핑했다. 지적의 실질은 채택.",
+  "decisions": [
+    {
+      "topic_id": "c1-T02",
+      "decision": "B 채택",
+      "reason": "B: L00004 날짜 헤더로 \"이번 주 금요일\"을 2026-10-09로 특정 가능. 메인이 원문 확인 후 채택.",
+      "changes": [
+        "deadline 이번 주 금요일→2026-10-09(금) — L00004 날짜 헤더 기준 산출값, 원문에 날짜 자체는 없음",
+        "evidence 추가",
+        "assumptions 추가"
+      ]
+    },
+    {
+      "topic_id": "c1-T03",
+      "decision": "B 채택(중요)",
+      "reason": "B가 원문 자체의 모순을 발견: L00017에서 10/24가 토요일이면 10/17도 토요일이라 L00023의 \"10월 17일 금요일\"은 요일이 어긋난다. 메인이 달력 확인 — 2026-10-05가 월요일이면 10/16이 금요일, 10/17이 토요일로 B 지적이 맞다. 합성 대화 작성 시 들어간 오류이나, 실제 대화에도 흔한 유형이라 고치지 않고 사람 확인 사항으로 남긴다.",
+      "changes": [
+        "certainty 확정→판단 보류",
+        "deadline 10월 17일 금요일→10월 17일(원문 표기 \"금요일\"과 불일치 — L00017 기준 10/17은 토요일. 10/16(금) 또는 10/17(토) 중 확정 필요)",
+        "conclusion 보강",
+        "counter_evidence 추가",
+        "unknowns 추가"
+      ]
+    },
+    {
+      "topic_id": "c1-T04",
+      "decision": "B 취지 채택·certainty는 스키마로 매핑",
+      "reason": "B: \"여쭤볼까 하는데\"는 확약이 아닌 의향 표명이라 certainty 확정은 과함. B가 제안한 \"추정\"은 허용값 밖. B가 제안한 '추정'·'잠정' 계열 값은 agent 정의의 certainty 허용값(확정/판단 보류) 밖이라 '판단 보류'로 매핑했다. 지적의 실질은 채택.",
+      "changes": [
+        "certainty 확정→판단 보류",
+        "conclusion 보강",
+        "unknowns 추가"
+      ]
+    },
+    {
+      "topic_id": "c2-T03",
+      "decision": "B 채택",
+      "reason": "B: L00035 날짜 헤더로 \"금요일\"을 2026-10-09로 특정 가능. 채택.",
+      "changes": [
+        "deadline 금요일→금요일(2026-10-09, L00035 날짜 헤더 기준)",
+        "evidence 추가",
+        "unknowns 추가"
+      ]
+    },
+    {
+      "topic_id": "c2-T04",
+      "decision": "B 취지 채택·certainty는 스키마로 매핑",
+      "reason": "B: 원문이 \"최대한\"·\"일단\"이라는 잠정 표현인데 certainty 확정은 분석자 자신의 counter_evidence와 모순. B의 \"잠정/추정\" 제안은 허용값 밖. B가 제안한 '추정'·'잠정' 계열 값은 agent 정의의 certainty 허용값(확정/판단 보류) 밖이라 '판단 보류'로 매핑했다. 지적의 실질은 채택.",
+      "changes": [
+        "certainty 확정→판단 보류",
+        "conclusion 보강",
+        "next_check"
+      ]
+    },
+    {
+      "topic_id": "c4-T04",
+      "decision": "B 채택",
+      "reason": "B: \"반영하겠습니다\"는 의사표시일 뿐이고, 인쇄 발주 발언(L00111)·발주 보고(L00120) 어디에도 강사 소개 반영 확인이 없다. 담당 지정과 완료의 혼동. 메인이 원문 재확인 후 채택.",
+      "changes": [
+        "status 해결·결정→담당 지정",
+        "conclusion 보강",
+        "counter_evidence 추가"
+      ]
+    },
+    {
+      "topic_id": "c4-T06",
+      "decision": "B 채택",
+      "reason": "B: 담당자·기준 시점 없는 무기한 보류인데 해결·결정으로 분류돼 conclusion의 \"보류 상태\"와 모순. 채택.",
+      "changes": [
+        "status 해결·결정→진행 중",
+        "conclusion 보강"
+      ]
+    },
+    {
+      "topic_id": "c1-T01",
+      "decision": "청크 간 갱신(c2-T01)",
+      "reason": "B는 청크 밖을 보지 않으므로 메인이 이후 청크 원문으로 판단: 다음 날 가상센터 내부 행사로 예약이 취소됨(L00037). 완료 상태가 뒤집혔다.",
+      "changes": [
+        "conclusion 보강",
+        "counter_evidence 추가",
+        "next_check"
+      ]
+    },
+    {
+      "topic_id": "c1-T02",
+      "decision": "청크 간 갱신(c4-T01)",
+      "reason": "B는 청크 밖을 보지 않으므로 메인이 이후 청크 원문으로 판단: c4-T01에서 시안 2개 제출·1안 선택 완료(L00092, L00096). 담당 지정 → 해결.",
+      "changes": [
+        "status 담당 지정→해결·결정",
+        "conclusion 보강",
+        "evidence 추가",
+        "next_check"
+      ]
+    },
+    {
+      "topic_id": "c1-T04",
+      "decision": "청크 간 갱신(c3-T03)",
+      "reason": "B는 청크 밖을 보지 않으므로 메인이 이후 청크 원문으로 판단: c3-T03에서 참여자D가 섭외한 강사로 확정(L00075). 강사 섭외 스레드 종결.",
+      "changes": [
+        "status 담당 지정→해결·결정",
+        "conclusion 보강",
+        "evidence 추가",
+        "next_check"
+      ]
+    },
+    {
+      "topic_id": "c1-T05",
+      "decision": "청크 간 갱신(c4-T03)",
+      "reason": "B는 청크 밖을 보지 않으므로 메인이 이후 청크 원문으로 판단: c4-T03에서 100장 발주 완료(L00120). 담당 지정 → 해결.",
+      "changes": [
+        "status 담당 지정→해결·결정",
+        "conclusion 보강",
+        "evidence 추가",
+        "next_check"
+      ]
+    },
+    {
+      "topic_id": "c2-T02",
+      "decision": "청크 간 갱신(c3-T01, c4-T02)",
+      "reason": "B는 청크 밖을 보지 않으므로 메인이 이후 청크 원문으로 판단: 담당자B가 소강당을 찾아 신청(c3-T01)하고 10/9 승인됨(L00109). 대체 장소 물색 종결.",
+      "changes": [
+        "status 담당 지정→해결·결정",
+        "conclusion 보강",
+        "evidence 추가",
+        "next_check"
+      ]
+    },
+    {
+      "topic_id": "c2-T03",
+      "decision": "청크 간 갱신(c4-T01)",
+      "reason": "B는 청크 밖을 보지 않으므로 메인이 이후 청크 원문으로 판단: c4-T01에서 시안 제출·선택 완료. 담당 지정 → 해결.",
+      "changes": [
+        "status 담당 지정→해결·결정",
+        "conclusion 보강",
+        "evidence 추가",
+        "next_check"
+      ]
+    },
+    {
+      "topic_id": "c2-T05",
+      "decision": "청크 간 갱신(c3-T03)",
+      "reason": "B는 청크 밖을 보지 않으므로 메인이 이후 청크 원문으로 판단: 참여자D가 약속대로 다음 날 결과를 보고하고 강사가 확정됨(L00070, L00075).",
+      "changes": [
+        "status 담당 지정→해결·결정",
+        "conclusion 보강",
+        "evidence 추가",
+        "next_check"
+      ]
+    },
+    {
+      "topic_id": "c3-T01",
+      "decision": "청크 간 갱신(c4-T02)",
+      "reason": "B는 청크 밖을 보지 않으므로 메인이 이후 청크 원문으로 판단: c4-T02에서 승인 확인(L00109). 진행 중 → 해결.",
+      "changes": [
+        "status 진행 중→해결·결정",
+        "conclusion 보강",
+        "evidence 추가",
+        "next_check"
+      ]
+    },
+    {
+      "topic_id": "c3-T04",
+      "decision": "청크 간 갱신(c4-T04)",
+      "reason": "B는 청크 밖을 보지 않으므로 메인이 이후 청크 원문으로 판단: c4-T04에서 참여자D가 전달하고 담당자C가 수령 확인(L00098~L00099). 전달 자체는 이행됨.",
+      "changes": [
+        "status 담당 지정→해결·결정",
+        "conclusion 보강",
+        "evidence 추가",
+        "next_check"
+      ]
+    },
+    {
+      "topic_id": "c2-T04",
+      "decision": "청크 간 갱신(c4-T07)",
+      "reason": "B는 청크 밖을 보지 않으므로 메인이 이후 청크 원문으로 판단: c4-T07에서 장소 확정 후 입금 마감 10/17 유지가 재확인됨(L00115). 잠정 → 확정.",
+      "changes": [
+        "certainty 판단 보류→확정",
+        "conclusion 보강",
+        "evidence 추가"
+      ]
+    },
+    {
+      "topic_id": "c3-T05",
+      "decision": "청크 간 확인(미해소)",
+      "reason": "B는 청크 밖을 보지 않으므로 메인이 이후 청크 원문으로 판단: 간식 담당자·예산은 c4에서도 언급되지 않음. 진행 중 유지.",
+      "changes": [
+        "unknowns 추가"
+      ]
+    },
+    {
+      "topic_id": "c1-T03",
+      "decision": "청크 간 갱신(c4-T08)",
+      "reason": "B는 청크 밖을 보지 않으므로 메인이 이후 청크 원문으로 판단: c4-T08에서 참가비 1만 원 유지가 재확인됨(L00118). 금액은 확정, 마감 요일 불일치만 미결.",
+      "changes": [
+        "conclusion 보강",
+        "evidence 추가"
+      ]
+    },
+    {
+      "topic_id": "c2-T01",
+      "decision": "채택",
+      "reason": "B accept, 메인 이견 없음. B의 unknowns/assumptions만 병합.",
+      "changes": []
+    },
+    {
+      "topic_id": "c2-T06",
+      "decision": "채택",
+      "reason": "B accept, 메인 이견 없음. B의 unknowns/assumptions만 병합.",
+      "changes": []
+    },
+    {
+      "topic_id": "c3-T02",
+      "decision": "채택",
+      "reason": "B accept, 메인 이견 없음. B의 unknowns/assumptions만 병합.",
+      "changes": []
+    },
+    {
+      "topic_id": "c3-T03",
+      "decision": "채택",
+      "reason": "B accept, 메인 이견 없음. B의 unknowns/assumptions만 병합.",
+      "changes": []
+    },
+    {
+      "topic_id": "c3-T06",
+      "decision": "채택",
+      "reason": "B accept, 메인 이견 없음. B의 unknowns/assumptions만 병합.",
+      "changes": []
+    },
+    {
+      "topic_id": "c4-T01",
+      "decision": "채택",
+      "reason": "B accept, 메인 이견 없음. B의 unknowns/assumptions만 병합.",
+      "changes": []
+    },
+    {
+      "topic_id": "c4-T02",
+      "decision": "채택",
+      "reason": "B accept, 메인 이견 없음. B의 unknowns/assumptions만 병합.",
+      "changes": []
+    },
+    {
+      "topic_id": "c4-T03",
+      "decision": "채택",
+      "reason": "B accept, 메인 이견 없음. B의 unknowns/assumptions만 병합.",
+      "changes": []
+    },
+    {
+      "topic_id": "c4-T05",
+      "decision": "채택",
+      "reason": "B accept, 메인 이견 없음. B의 unknowns/assumptions만 병합.",
+      "changes": []
+    },
+    {
+      "topic_id": "c4-T07",
+      "decision": "채택",
+      "reason": "B accept, 메인 이견 없음. B의 unknowns/assumptions만 병합.",
+      "changes": []
+    },
+    {
+      "topic_id": "c4-T08",
+      "decision": "채택",
+      "reason": "B accept, 메인 이견 없음. B의 unknowns/assumptions만 병합.",
+      "changes": []
+    },
+    {
+      "topic_id": "c4-T09",
+      "decision": "채택",
+      "reason": "B accept, 메인 이견 없음. B의 unknowns/assumptions만 병합.",
+      "changes": []
+    },
+    {
+      "topic_id": "c4-T10",
+      "decision": "채택",
+      "reason": "B accept, 메인 이견 없음. B의 unknowns/assumptions만 병합.",
+      "changes": []
+    },
+    {
+      "topic_id": "c4-T11",
+      "decision": "채택",
+      "reason": "B accept, 메인 이견 없음. B의 unknowns/assumptions만 병합.",
+      "changes": []
+    },
+    {
+      "topic_id": "c4-T12",
+      "decision": "채택",
+      "reason": "B accept, 메인 이견 없음. B의 unknowns/assumptions만 병합.",
+      "changes": []
+    }
+  ]
+}

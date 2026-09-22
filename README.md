@@ -2,12 +2,23 @@
 
 Claude Code용 스킬 모음입니다. 스킬 하나가 폴더 하나이고, 각 폴더에 `SKILL.md`(Claude가 읽는 절차)와 필요한 스크립트·참고 문서·예시가 들어 있습니다.
 
+## ASC 3강: 오픈소스로 에이전트 업데이트
+
+2강의 Skill·Subagent를 tiktoken·RapidFuzz·ajv로 업데이트했습니다. 실제 대화 11,341줄로 돌려 나온 실패(인용 줄 번호 드리프트 16건, 줄 누락 1건, 상태값 오타 2건)가 근거입니다.
+
+- **[과제 설명 및 변경 내역](ASC-LESSON03.md)**
+- **[업데이트 실행 결과](asc-lesson02-kakao-review/runs/test-03/)** · **[최종 보고서](asc-lesson02-kakao-review/runs/test-03/06-final-report.md)** · **[변경 전후 diff](asc-lesson02-kakao-review/runs/test-03/00-diff.txt)**
+- [다운로드용 ZIP](asc-lesson03-update.zip)
+
+인용 줄 번호 드리프트는 1.3%에서 0%가 됐고, 검증이 보고서 작성 후 1회에서 분석·검토·최종 3회 관문으로 바뀌었습니다.
+
 ## ASC 2강: Subagent 분석·검토
 
 - **[2강 파일 폴더 바로 보기](asc-lesson02-kakao-review/)**: Subagent 2개, Skill, 합성 예제, 실제 프롬프트·응답을 파일별로 확인합니다.
 - **[과제 설명 및 빠른 링크](ASC-LESSON02.md)**
 - **[최종 보고서](asc-lesson02-kakao-review/results/final-report.md)** · **[판단 조율 기록](asc-lesson02-kakao-review/results/coordination.md)**
 - [다운로드용 원본 ZIP](asc-lesson02-kakao-review.zip)은 그대로 유지합니다.
+- 이 폴더의 Skill·Subagent는 [3강](ASC-LESSON03.md)에서 업데이트됐습니다. 2강 제출 시점 상태는 위 ZIP에 그대로 있습니다.
 
 이 폴더는 Claude Code용 프로젝트입니다. 일반 Claude 채팅에 ZIP을 스킬로 등록하는 방식과 다릅니다. 보관된 실제 실행은 Aside Subagent 환경이며 이 제출본은 Claude Code 재실행 검증을 포함하지 않습니다.
 
