@@ -1,0 +1,53 @@
+{
+  "source": "examples/synthetic-chat-long.txt",
+  "source_encoding": "utf-8-sig",
+  "total_lines": 132,
+  "total_tokens": 5861,
+  "line_id_width": 5,
+  "budget_tokens": 2000,
+  "encoding_name": "cl100k_base",
+  "tool": "openai/tiktoken (https://github.com/openai/tiktoken)",
+  "chunks": [
+    {
+      "chunk": "c1",
+      "first_line": "L00001",
+      "last_line": "L00034",
+      "lines": 34,
+      "tokens": 1587,
+      "date_headers": 1,
+      "file": "runs/test-03/work/chunks/c1-source.txt"
+    },
+    {
+      "chunk": "c2",
+      "first_line": "L00035",
+      "last_line": "L00058",
+      "lines": 24,
+      "tokens": 1123,
+      "date_headers": 1,
+      "file": "runs/test-03/work/chunks/c2-source.txt"
+    },
+    {
+      "chunk": "c3",
+      "first_line": "L00059",
+      "last_line": "L00090",
+      "lines": 32,
+      "tokens": 1404,
+      "date_headers": 1,
+      "file": "runs/test-03/work/chunks/c3-source.txt"
+    },
+    {
+      "chunk": "c4",
+      "first_line": "L00091",
+      "last_line": "L00132",
+      "lines": 42,
+      "tokens": 1747,
+      "date_headers": 2,
+      "file": "runs/test-03/work/chunks/c4-source.txt"
+    }
+  ],
+  "coverage": {
+    "covered_lines": 132,
+    "gaps": [],
+    "complete": true
+  }
+}

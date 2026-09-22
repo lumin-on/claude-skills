@@ -1,0 +1,11 @@
+{
+  "indexed": "runs/test-03/work/indexed.txt",
+  "files": [
+    "runs/test-03/04-final.json"
+  ],
+  "citations_checked": 118,
+  "mismatches": 0,
+  "auto_fixable": 0,
+  "tool": "rapidfuzz/RapidFuzz (https://github.com/rapidfuzz/RapidFuzz)",
+  "problems": []
+}
